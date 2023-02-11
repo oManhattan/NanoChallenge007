@@ -7,22 +7,134 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		317173A62997FF65008F14D9 /* NanoChallenge007App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317173A52997FF65008F14D9 /* NanoChallenge007App.swift */; };
-		317173A82997FF65008F14D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317173A72997FF65008F14D9 /* ContentView.swift */; };
-		317173AA2997FF66008F14D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317173A92997FF66008F14D9 /* Assets.xcassets */; };
-		317173AD2997FF66008F14D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317173AC2997FF66008F14D9 /* Preview Assets.xcassets */; };
+		31437864298C493D00E78CE4 /* CustomNavigationLink1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31437863298C493D00E78CE4 /* CustomNavigationLink1.swift */; };
+		3171730E2991BA88008F14D9 /* CustomNavigationLink2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171730D2991BA88008F14D9 /* CustomNavigationLink2.swift */; };
+		317173102991C0CB008F14D9 /* RarityBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171730F2991C0CB008F14D9 /* RarityBackground.swift */; };
+		317173132992519C008F14D9 /* CustomTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317173122992519C008F14D9 /* CustomTitleView.swift */; };
+		3171731529925227008F14D9 /* CustomSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171731429925227008F14D9 /* CustomSeparator.swift */; };
+		3171731929925312008F14D9 /* ContentBalloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171731829925312008F14D9 /* ContentBalloon.swift */; };
+		3171731B29925356008F14D9 /* AsyncImageWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171731A29925356008F14D9 /* AsyncImageWithTitle.swift */; };
+		3171731D29928697008F14D9 /* SkillUpgradeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171731C29928697008F14D9 /* SkillUpgradeModel.swift */; };
+		3171731F299298E6008F14D9 /* ImageRoundedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171731E299298E6008F14D9 /* ImageRoundedBackground.swift */; };
+		317173212992E1EA008F14D9 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317173202992E1EA008F14D9 /* ListViewModel.swift */; };
+		317173232992E858008F14D9 /* WeaponTypeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317173222992E858008F14D9 /* WeaponTypeImage.swift */; };
+		317173252992E943008F14D9 /* ImageWithTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317173242992E943008F14D9 /* ImageWithTitleView.swift */; };
+		317173292993EF1C008F14D9 /* MaterialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317173282993EF1C008F14D9 /* MaterialModel.swift */; };
+		3171732B2993EF95008F14D9 /* BossMaterialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171732A2993EF95008F14D9 /* BossMaterialModel.swift */; };
+		3171732D2993F01F008F14D9 /* CharacterAscensionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171732C2993F01F008F14D9 /* CharacterAscensionModel.swift */; };
+		3171733029943C19008F14D9 /* CommonAscensionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171732F29943C19008F14D9 /* CommonAscensionModel.swift */; };
+		3171733229943CCA008F14D9 /* LocalSpecialtiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171733129943CCA008F14D9 /* LocalSpecialtiesModel.swift */; };
+		3171733429943DD2008F14D9 /* TalentBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171733329943DD2008F14D9 /* TalentBookModel.swift */; };
+		3171733629943E81008F14D9 /* TalentBossModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171733529943E81008F14D9 /* TalentBossModel.swift */; };
+		3171733829943F87008F14D9 /* WeaponAscensionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171733729943F87008F14D9 /* WeaponAscensionModel.swift */; };
+		3171733A29944031008F14D9 /* MaterialItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171733929944031008F14D9 /* MaterialItemModel.swift */; };
+		3171733C29944089008F14D9 /* WeaponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171733B29944089008F14D9 /* WeaponModel.swift */; };
+		3171733E29944268008F14D9 /* ArtifactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171733D29944268008F14D9 /* ArtifactModel.swift */; };
+		3171734029944CD3008F14D9 /* EnemyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171733F29944CD3008F14D9 /* EnemyModel.swift */; };
+		31717343299458CF008F14D9 /* EnemyDropModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31717342299458CF008F14D9 /* EnemyDropModel.swift */; };
+		31717345299458ED008F14D9 /* EnemyArtifactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31717344299458ED008F14D9 /* EnemyArtifactModel.swift */; };
+		317173472994590D008F14D9 /* EnemyElementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317173462994590D008F14D9 /* EnemyElementModel.swift */; };
+		3171734A29945D07008F14D9 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171734929945D07008F14D9 /* FoodModel.swift */; };
+		3171734C29945DE4008F14D9 /* CookingIngredientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171734B29945DE4008F14D9 /* CookingIngredientModel.swift */; };
+		3171734E29945E45008F14D9 /* RecipeItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171734D29945E45008F14D9 /* RecipeItemModel.swift */; };
+		3171735129945EFC008F14D9 /* DomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171735029945EFC008F14D9 /* DomainModel.swift */; };
+		31717353299463C8008F14D9 /* DomainRequirementsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31717352299463C8008F14D9 /* DomainRequirementsModel.swift */; };
+		31717355299463DA008F14D9 /* DomainReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31717354299463DA008F14D9 /* DomainReward.swift */; };
+		31717357299463F0008F14D9 /* DomainRewardDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31717356299463F0008F14D9 /* DomainRewardDetails.swift */; };
+		317173592994640C008F14D9 /* DomainDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317173582994640C008F14D9 /* DomainDrop.swift */; };
+		3171735B29947174008F14D9 /* CustomAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171735A29947174008F14D9 /* CustomAsyncImage.swift */; };
+		317173612995238D008F14D9 /* AsyncImageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317173602995238D008F14D9 /* AsyncImageCard.swift */; };
+		3171736529952611008F14D9 /* ImageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171736429952610008F14D9 /* ImageCard.swift */; };
+		3171736929953493008F14D9 /* ListGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171736829953493008F14D9 /* ListGridLayout.swift */; };
+		3171736C29953898008F14D9 /* CharactersListVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171736B29953897008F14D9 /* CharactersListVIew.swift */; };
+		3171736E29966F76008F14D9 /* CharacterTalentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171736D29966F76008F14D9 /* CharacterTalentView.swift */; };
+		3171737029970B5C008F14D9 /* CharacterConstellationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171736F29970B5C008F14D9 /* CharacterConstellationView.swift */; };
+		31717372299719EC008F14D9 /* GridList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31717371299719EC008F14D9 /* GridList.swift */; };
+		317173902997C045008F14D9 /* BossMaterialList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171738F2997C045008F14D9 /* BossMaterialList.swift */; };
+		317173932997D8D5008F14D9 /* BossMaterialDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317173922997D8D5008F14D9 /* BossMaterialDetails.swift */; };
+		317173952997D9EC008F14D9 /* StarRarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317173942997D9EC008F14D9 /* StarRarity.swift */; };
+		317173982997E34F008F14D9 /* LocalSpecialtiesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317173972997E34F008F14D9 /* LocalSpecialtiesList.swift */; };
+		31E6FA3A298A984B00283910 /* NanoChallenge007App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6FA39298A984B00283910 /* NanoChallenge007App.swift */; };
+		31E6FA3E298A984C00283910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31E6FA3D298A984C00283910 /* Assets.xcassets */; };
+		31E6FA41298A984C00283910 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31E6FA40298A984C00283910 /* Preview Assets.xcassets */; };
+		31E6FA4B298A988200283910 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6FA4A298A988200283910 /* MainScreen.swift */; };
+		31E6FA50298A9AD800283910 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6FA4F298A9AD800283910 /* HTTPRequest.swift */; };
+		31E6FA57298AD81300283910 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6FA56298AD81300283910 /* CharactersViewModel.swift */; };
+		31E6FA59298AD8FC00283910 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6FA58298AD8FC00283910 /* CharacterModel.swift */; };
+		31E6FA5B298AD91B00283910 /* SkillTalentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6FA5A298AD91B00283910 /* SkillTalentModel.swift */; };
+		31E6FA5D298AD93500283910 /* PassiveTalentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6FA5C298AD93500283910 /* PassiveTalentModel.swift */; };
+		31E6FA5F298AD95100283910 /* ConstellationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6FA5E298AD95100283910 /* ConstellationModel.swift */; };
+		31E6FA61298AD9EA00283910 /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6FA60298AD9EA00283910 /* JSONModel.swift */; };
+		31E6FA6A298AE94D00283910 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6FA69298AE94D00283910 /* View+Extension.swift */; };
+		31E6FA6E298B012500283910 /* CharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6FA6D298B012500283910 /* CharacterDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		317173A22997FF65008F14D9 /* NanoChallenge007.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge007.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		317173A52997FF65008F14D9 /* NanoChallenge007App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoChallenge007App.swift; sourceTree = "<group>"; };
-		317173A72997FF65008F14D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		317173A92997FF66008F14D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		317173AC2997FF66008F14D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31437863298C493D00E78CE4 /* CustomNavigationLink1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationLink1.swift; sourceTree = "<group>"; };
+		3171730D2991BA88008F14D9 /* CustomNavigationLink2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationLink2.swift; sourceTree = "<group>"; };
+		3171730F2991C0CB008F14D9 /* RarityBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarityBackground.swift; sourceTree = "<group>"; };
+		317173122992519C008F14D9 /* CustomTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleView.swift; sourceTree = "<group>"; };
+		3171731429925227008F14D9 /* CustomSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSeparator.swift; sourceTree = "<group>"; };
+		3171731829925312008F14D9 /* ContentBalloon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBalloon.swift; sourceTree = "<group>"; };
+		3171731A29925356008F14D9 /* AsyncImageWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageWithTitle.swift; sourceTree = "<group>"; };
+		3171731C29928697008F14D9 /* SkillUpgradeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillUpgradeModel.swift; sourceTree = "<group>"; };
+		3171731E299298E6008F14D9 /* ImageRoundedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRoundedBackground.swift; sourceTree = "<group>"; };
+		317173202992E1EA008F14D9 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		317173222992E858008F14D9 /* WeaponTypeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponTypeImage.swift; sourceTree = "<group>"; };
+		317173242992E943008F14D9 /* ImageWithTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithTitleView.swift; sourceTree = "<group>"; };
+		317173282993EF1C008F14D9 /* MaterialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialModel.swift; sourceTree = "<group>"; };
+		3171732A2993EF95008F14D9 /* BossMaterialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BossMaterialModel.swift; sourceTree = "<group>"; };
+		3171732C2993F01F008F14D9 /* CharacterAscensionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAscensionModel.swift; sourceTree = "<group>"; };
+		3171732F29943C19008F14D9 /* CommonAscensionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAscensionModel.swift; sourceTree = "<group>"; };
+		3171733129943CCA008F14D9 /* LocalSpecialtiesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSpecialtiesModel.swift; sourceTree = "<group>"; };
+		3171733329943DD2008F14D9 /* TalentBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentBookModel.swift; sourceTree = "<group>"; };
+		3171733529943E81008F14D9 /* TalentBossModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentBossModel.swift; sourceTree = "<group>"; };
+		3171733729943F87008F14D9 /* WeaponAscensionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponAscensionModel.swift; sourceTree = "<group>"; };
+		3171733929944031008F14D9 /* MaterialItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialItemModel.swift; sourceTree = "<group>"; };
+		3171733B29944089008F14D9 /* WeaponModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponModel.swift; sourceTree = "<group>"; };
+		3171733D29944268008F14D9 /* ArtifactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactModel.swift; sourceTree = "<group>"; };
+		3171733F29944CD3008F14D9 /* EnemyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyModel.swift; sourceTree = "<group>"; };
+		31717342299458CF008F14D9 /* EnemyDropModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyDropModel.swift; sourceTree = "<group>"; };
+		31717344299458ED008F14D9 /* EnemyArtifactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyArtifactModel.swift; sourceTree = "<group>"; };
+		317173462994590D008F14D9 /* EnemyElementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyElementModel.swift; sourceTree = "<group>"; };
+		3171734929945D07008F14D9 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		3171734B29945DE4008F14D9 /* CookingIngredientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingIngredientModel.swift; sourceTree = "<group>"; };
+		3171734D29945E45008F14D9 /* RecipeItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeItemModel.swift; sourceTree = "<group>"; };
+		3171735029945EFC008F14D9 /* DomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModel.swift; sourceTree = "<group>"; };
+		31717352299463C8008F14D9 /* DomainRequirementsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainRequirementsModel.swift; sourceTree = "<group>"; };
+		31717354299463DA008F14D9 /* DomainReward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainReward.swift; sourceTree = "<group>"; };
+		31717356299463F0008F14D9 /* DomainRewardDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainRewardDetails.swift; sourceTree = "<group>"; };
+		317173582994640C008F14D9 /* DomainDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainDrop.swift; sourceTree = "<group>"; };
+		3171735A29947174008F14D9 /* CustomAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncImage.swift; sourceTree = "<group>"; };
+		317173602995238D008F14D9 /* AsyncImageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageCard.swift; sourceTree = "<group>"; };
+		3171736429952610008F14D9 /* ImageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCard.swift; sourceTree = "<group>"; };
+		3171736829953493008F14D9 /* ListGridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGridLayout.swift; sourceTree = "<group>"; };
+		3171736B29953897008F14D9 /* CharactersListVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListVIew.swift; sourceTree = "<group>"; };
+		3171736D29966F76008F14D9 /* CharacterTalentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTalentView.swift; sourceTree = "<group>"; };
+		3171736F29970B5C008F14D9 /* CharacterConstellationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterConstellationView.swift; sourceTree = "<group>"; };
+		31717371299719EC008F14D9 /* GridList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridList.swift; sourceTree = "<group>"; };
+		3171738F2997C045008F14D9 /* BossMaterialList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BossMaterialList.swift; sourceTree = "<group>"; };
+		317173922997D8D5008F14D9 /* BossMaterialDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BossMaterialDetails.swift; sourceTree = "<group>"; };
+		317173942997D9EC008F14D9 /* StarRarity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRarity.swift; sourceTree = "<group>"; };
+		317173972997E34F008F14D9 /* LocalSpecialtiesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSpecialtiesList.swift; sourceTree = "<group>"; };
+		31E6FA36298A984B00283910 /* NanoChallenge007.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge007.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31E6FA39298A984B00283910 /* NanoChallenge007App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoChallenge007App.swift; sourceTree = "<group>"; };
+		31E6FA3D298A984C00283910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31E6FA40298A984C00283910 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31E6FA4A298A988200283910 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		31E6FA4F298A9AD800283910 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		31E6FA56298AD81300283910 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		31E6FA58298AD8FC00283910 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		31E6FA5A298AD91B00283910 /* SkillTalentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTalentModel.swift; sourceTree = "<group>"; };
+		31E6FA5C298AD93500283910 /* PassiveTalentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassiveTalentModel.swift; sourceTree = "<group>"; };
+		31E6FA5E298AD95100283910 /* ConstellationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstellationModel.swift; sourceTree = "<group>"; };
+		31E6FA60298AD9EA00283910 /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
+		31E6FA69298AE94D00283910 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		31E6FA6D298B012500283910 /* CharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3171739F2997FF65008F14D9 /* Frameworks */ = {
+		31E6FA33298A984B00283910 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,51 +144,211 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		317173992997FF65008F14D9 = {
+		317173112991DC3B008F14D9 /* Character */ = {
 			isa = PBXGroup;
 			children = (
-				317173A42997FF65008F14D9 /* NanoChallenge007 */,
-				317173A32997FF65008F14D9 /* Products */,
+				3171736B29953897008F14D9 /* CharactersListVIew.swift */,
+				31E6FA6D298B012500283910 /* CharacterDetailsView.swift */,
+				3171736D29966F76008F14D9 /* CharacterTalentView.swift */,
+				3171736F29970B5C008F14D9 /* CharacterConstellationView.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		317173262993EE0E008F14D9 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				31E6FA58298AD8FC00283910 /* CharacterModel.swift */,
+				31E6FA5A298AD91B00283910 /* SkillTalentModel.swift */,
+				31E6FA5C298AD93500283910 /* PassiveTalentModel.swift */,
+				31E6FA5E298AD95100283910 /* ConstellationModel.swift */,
+				3171731C29928697008F14D9 /* SkillUpgradeModel.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		317173272993EF0C008F14D9 /* Materials */ = {
+			isa = PBXGroup;
+			children = (
+				317173282993EF1C008F14D9 /* MaterialModel.swift */,
+				3171733929944031008F14D9 /* MaterialItemModel.swift */,
+				3171732C2993F01F008F14D9 /* CharacterAscensionModel.swift */,
+				3171732F29943C19008F14D9 /* CommonAscensionModel.swift */,
+				3171732A2993EF95008F14D9 /* BossMaterialModel.swift */,
+				3171733129943CCA008F14D9 /* LocalSpecialtiesModel.swift */,
+				3171733329943DD2008F14D9 /* TalentBookModel.swift */,
+				3171733529943E81008F14D9 /* TalentBossModel.swift */,
+				3171733729943F87008F14D9 /* WeaponAscensionModel.swift */,
+				3171734B29945DE4008F14D9 /* CookingIngredientModel.swift */,
+			);
+			path = Materials;
+			sourceTree = "<group>";
+		};
+		317173412994534C008F14D9 /* Enemy */ = {
+			isa = PBXGroup;
+			children = (
+				3171733F29944CD3008F14D9 /* EnemyModel.swift */,
+				31717342299458CF008F14D9 /* EnemyDropModel.swift */,
+				31717344299458ED008F14D9 /* EnemyArtifactModel.swift */,
+				317173462994590D008F14D9 /* EnemyElementModel.swift */,
+			);
+			path = Enemy;
+			sourceTree = "<group>";
+		};
+		3171734829945CF7008F14D9 /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				3171734929945D07008F14D9 /* FoodModel.swift */,
+				3171734D29945E45008F14D9 /* RecipeItemModel.swift */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		3171734F29945EEE008F14D9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3171735029945EFC008F14D9 /* DomainModel.swift */,
+				31717352299463C8008F14D9 /* DomainRequirementsModel.swift */,
+				31717354299463DA008F14D9 /* DomainReward.swift */,
+				31717356299463F0008F14D9 /* DomainRewardDetails.swift */,
+				317173582994640C008F14D9 /* DomainDrop.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		317173912997D4B5008F14D9 /* BossMaterial */ = {
+			isa = PBXGroup;
+			children = (
+				3171738F2997C045008F14D9 /* BossMaterialList.swift */,
+				317173922997D8D5008F14D9 /* BossMaterialDetails.swift */,
+			);
+			path = BossMaterial;
+			sourceTree = "<group>";
+		};
+		317173962997E337008F14D9 /* LocalSpecialties */ = {
+			isa = PBXGroup;
+			children = (
+				317173972997E34F008F14D9 /* LocalSpecialtiesList.swift */,
+			);
+			path = LocalSpecialties;
+			sourceTree = "<group>";
+		};
+		31E6FA2D298A984B00283910 = {
+			isa = PBXGroup;
+			children = (
+				31E6FA38298A984B00283910 /* NanoChallenge007 */,
+				31E6FA37298A984B00283910 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		317173A32997FF65008F14D9 /* Products */ = {
+		31E6FA37298A984B00283910 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				317173A22997FF65008F14D9 /* NanoChallenge007.app */,
+				31E6FA36298A984B00283910 /* NanoChallenge007.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		317173A42997FF65008F14D9 /* NanoChallenge007 */ = {
+		31E6FA38298A984B00283910 /* NanoChallenge007 */ = {
 			isa = PBXGroup;
 			children = (
-				317173A52997FF65008F14D9 /* NanoChallenge007App.swift */,
-				317173A72997FF65008F14D9 /* ContentView.swift */,
-				317173A92997FF66008F14D9 /* Assets.xcassets */,
-				317173AB2997FF66008F14D9 /* Preview Content */,
+				31E6FA39298A984B00283910 /* NanoChallenge007App.swift */,
+				31E6FA47298A985300283910 /* View */,
+				31E6FA48298A985800283910 /* ViewModel */,
+				31E6FA49298A986000283910 /* Model */,
+				31E6FA3D298A984C00283910 /* Assets.xcassets */,
+				31E6FA3F298A984C00283910 /* Preview Content */,
 			);
 			path = NanoChallenge007;
 			sourceTree = "<group>";
 		};
-		317173AB2997FF66008F14D9 /* Preview Content */ = {
+		31E6FA3F298A984C00283910 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				317173AC2997FF66008F14D9 /* Preview Assets.xcassets */,
+				31E6FA40298A984C00283910 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		31E6FA47298A985300283910 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				31E6FA4C298A98D200283910 /* Components */,
+				317173112991DC3B008F14D9 /* Character */,
+				317173912997D4B5008F14D9 /* BossMaterial */,
+				317173962997E337008F14D9 /* LocalSpecialties */,
+				31E6FA4A298A988200283910 /* MainScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		31E6FA48298A985800283910 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				31E6FA62298ADD9100283910 /* Extensions */,
+				31E6FA4F298A9AD800283910 /* HTTPRequest.swift */,
+				31E6FA56298AD81300283910 /* CharactersViewModel.swift */,
+				317173202992E1EA008F14D9 /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		31E6FA49298A986000283910 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				31E6FA60298AD9EA00283910 /* JSONModel.swift */,
+				317173262993EE0E008F14D9 /* Character */,
+				317173272993EF0C008F14D9 /* Materials */,
+				317173412994534C008F14D9 /* Enemy */,
+				3171734829945CF7008F14D9 /* Food */,
+				3171734F29945EEE008F14D9 /* Domain */,
+				3171733B29944089008F14D9 /* WeaponModel.swift */,
+				3171733D29944268008F14D9 /* ArtifactModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		31E6FA4C298A98D200283910 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3171735A29947174008F14D9 /* CustomAsyncImage.swift */,
+				317173242992E943008F14D9 /* ImageWithTitleView.swift */,
+				3171731A29925356008F14D9 /* AsyncImageWithTitle.swift */,
+				3171730F2991C0CB008F14D9 /* RarityBackground.swift */,
+				317173222992E858008F14D9 /* WeaponTypeImage.swift */,
+				3171731E299298E6008F14D9 /* ImageRoundedBackground.swift */,
+				317173122992519C008F14D9 /* CustomTitleView.swift */,
+				3171731429925227008F14D9 /* CustomSeparator.swift */,
+				3171731829925312008F14D9 /* ContentBalloon.swift */,
+				3171736429952610008F14D9 /* ImageCard.swift */,
+				317173602995238D008F14D9 /* AsyncImageCard.swift */,
+				31437863298C493D00E78CE4 /* CustomNavigationLink1.swift */,
+				3171730D2991BA88008F14D9 /* CustomNavigationLink2.swift */,
+				3171736829953493008F14D9 /* ListGridLayout.swift */,
+				31717371299719EC008F14D9 /* GridList.swift */,
+				317173942997D9EC008F14D9 /* StarRarity.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		31E6FA62298ADD9100283910 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				31E6FA69298AE94D00283910 /* View+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		317173A12997FF65008F14D9 /* NanoChallenge007 */ = {
+		31E6FA35298A984B00283910 /* NanoChallenge007 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 317173B02997FF66008F14D9 /* Build configuration list for PBXNativeTarget "NanoChallenge007" */;
+			buildConfigurationList = 31E6FA44298A984C00283910 /* Build configuration list for PBXNativeTarget "NanoChallenge007" */;
 			buildPhases = (
-				3171739E2997FF65008F14D9 /* Sources */,
-				3171739F2997FF65008F14D9 /* Frameworks */,
-				317173A02997FF65008F14D9 /* Resources */,
+				31E6FA32298A984B00283910 /* Sources */,
+				31E6FA33298A984B00283910 /* Frameworks */,
+				31E6FA34298A984B00283910 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +356,25 @@
 			);
 			name = NanoChallenge007;
 			productName = NanoChallenge007;
-			productReference = 317173A22997FF65008F14D9 /* NanoChallenge007.app */;
+			productReference = 31E6FA36298A984B00283910 /* NanoChallenge007.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3171739A2997FF65008F14D9 /* Project object */ = {
+		31E6FA2E298A984B00283910 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					317173A12997FF65008F14D9 = {
+					31E6FA35298A984B00283910 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
-			buildConfigurationList = 3171739D2997FF65008F14D9 /* Build configuration list for PBXProject "NanoChallenge007" */;
+			buildConfigurationList = 31E6FA31298A984B00283910 /* Build configuration list for PBXProject "NanoChallenge007" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +382,98 @@
 				en,
 				Base,
 			);
-			mainGroup = 317173992997FF65008F14D9;
-			productRefGroup = 317173A32997FF65008F14D9 /* Products */;
+			mainGroup = 31E6FA2D298A984B00283910;
+			productRefGroup = 31E6FA37298A984B00283910 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				317173A12997FF65008F14D9 /* NanoChallenge007 */,
+				31E6FA35298A984B00283910 /* NanoChallenge007 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		317173A02997FF65008F14D9 /* Resources */ = {
+		31E6FA34298A984B00283910 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				317173AD2997FF66008F14D9 /* Preview Assets.xcassets in Resources */,
-				317173AA2997FF66008F14D9 /* Assets.xcassets in Resources */,
+				31E6FA41298A984C00283910 /* Preview Assets.xcassets in Resources */,
+				31E6FA3E298A984C00283910 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3171739E2997FF65008F14D9 /* Sources */ = {
+		31E6FA32298A984B00283910 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				317173A82997FF65008F14D9 /* ContentView.swift in Sources */,
-				317173A62997FF65008F14D9 /* NanoChallenge007App.swift in Sources */,
+				317173932997D8D5008F14D9 /* BossMaterialDetails.swift in Sources */,
+				3171736E29966F76008F14D9 /* CharacterTalentView.swift in Sources */,
+				31E6FA4B298A988200283910 /* MainScreen.swift in Sources */,
+				317173472994590D008F14D9 /* EnemyElementModel.swift in Sources */,
+				3171733629943E81008F14D9 /* TalentBossModel.swift in Sources */,
+				31717372299719EC008F14D9 /* GridList.swift in Sources */,
+				3171733229943CCA008F14D9 /* LocalSpecialtiesModel.swift in Sources */,
+				317173612995238D008F14D9 /* AsyncImageCard.swift in Sources */,
+				3171733A29944031008F14D9 /* MaterialItemModel.swift in Sources */,
+				3171734C29945DE4008F14D9 /* CookingIngredientModel.swift in Sources */,
+				3171732B2993EF95008F14D9 /* BossMaterialModel.swift in Sources */,
+				31717357299463F0008F14D9 /* DomainRewardDetails.swift in Sources */,
+				3171731929925312008F14D9 /* ContentBalloon.swift in Sources */,
+				3171736C29953898008F14D9 /* CharactersListVIew.swift in Sources */,
+				317173982997E34F008F14D9 /* LocalSpecialtiesList.swift in Sources */,
+				3171734029944CD3008F14D9 /* EnemyModel.swift in Sources */,
+				3171733829943F87008F14D9 /* WeaponAscensionModel.swift in Sources */,
+				31E6FA57298AD81300283910 /* CharactersViewModel.swift in Sources */,
+				317173592994640C008F14D9 /* DomainDrop.swift in Sources */,
+				31E6FA5D298AD93500283910 /* PassiveTalentModel.swift in Sources */,
+				3171732D2993F01F008F14D9 /* CharacterAscensionModel.swift in Sources */,
+				3171737029970B5C008F14D9 /* CharacterConstellationView.swift in Sources */,
+				3171731D29928697008F14D9 /* SkillUpgradeModel.swift in Sources */,
+				31717343299458CF008F14D9 /* EnemyDropModel.swift in Sources */,
+				317173102991C0CB008F14D9 /* RarityBackground.swift in Sources */,
+				3171735129945EFC008F14D9 /* DomainModel.swift in Sources */,
+				31E6FA61298AD9EA00283910 /* JSONModel.swift in Sources */,
+				3171736529952611008F14D9 /* ImageCard.swift in Sources */,
+				3171735B29947174008F14D9 /* CustomAsyncImage.swift in Sources */,
+				31717345299458ED008F14D9 /* EnemyArtifactModel.swift in Sources */,
+				31E6FA6A298AE94D00283910 /* View+Extension.swift in Sources */,
+				317173252992E943008F14D9 /* ImageWithTitleView.swift in Sources */,
+				317173212992E1EA008F14D9 /* ListViewModel.swift in Sources */,
+				3171734E29945E45008F14D9 /* RecipeItemModel.swift in Sources */,
+				31437864298C493D00E78CE4 /* CustomNavigationLink1.swift in Sources */,
+				3171731B29925356008F14D9 /* AsyncImageWithTitle.swift in Sources */,
+				31E6FA5B298AD91B00283910 /* SkillTalentModel.swift in Sources */,
+				3171731529925227008F14D9 /* CustomSeparator.swift in Sources */,
+				3171734A29945D07008F14D9 /* FoodModel.swift in Sources */,
+				3171733429943DD2008F14D9 /* TalentBookModel.swift in Sources */,
+				317173232992E858008F14D9 /* WeaponTypeImage.swift in Sources */,
+				3171730E2991BA88008F14D9 /* CustomNavigationLink2.swift in Sources */,
+				317173902997C045008F14D9 /* BossMaterialList.swift in Sources */,
+				317173292993EF1C008F14D9 /* MaterialModel.swift in Sources */,
+				31E6FA50298A9AD800283910 /* HTTPRequest.swift in Sources */,
+				31E6FA6E298B012500283910 /* CharacterDetailsView.swift in Sources */,
+				31717353299463C8008F14D9 /* DomainRequirementsModel.swift in Sources */,
+				317173952997D9EC008F14D9 /* StarRarity.swift in Sources */,
+				3171731F299298E6008F14D9 /* ImageRoundedBackground.swift in Sources */,
+				31E6FA5F298AD95100283910 /* ConstellationModel.swift in Sources */,
+				3171736929953493008F14D9 /* ListGridLayout.swift in Sources */,
+				3171733C29944089008F14D9 /* WeaponModel.swift in Sources */,
+				3171733029943C19008F14D9 /* CommonAscensionModel.swift in Sources */,
+				317173132992519C008F14D9 /* CustomTitleView.swift in Sources */,
+				31E6FA59298AD8FC00283910 /* CharacterModel.swift in Sources */,
+				31717355299463DA008F14D9 /* DomainReward.swift in Sources */,
+				3171733E29944268008F14D9 /* ArtifactModel.swift in Sources */,
+				31E6FA3A298A984B00283910 /* NanoChallenge007App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		317173AE2997FF66008F14D9 /* Debug */ = {
+		31E6FA42298A984C00283910 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,7 +533,7 @@
 			};
 			name = Debug;
 		};
-		317173AF2997FF66008F14D9 /* Release */ = {
+		31E6FA43298A984C00283910 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,7 +587,7 @@
 			};
 			name = Release;
 		};
-		317173B12997FF66008F14D9 /* Debug */ = {
+		31E6FA45298A984C00283910 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -288,7 +616,7 @@
 			};
 			name = Debug;
 		};
-		317173B22997FF66008F14D9 /* Release */ = {
+		31E6FA46298A984C00283910 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -320,25 +648,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3171739D2997FF65008F14D9 /* Build configuration list for PBXProject "NanoChallenge007" */ = {
+		31E6FA31298A984B00283910 /* Build configuration list for PBXProject "NanoChallenge007" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				317173AE2997FF66008F14D9 /* Debug */,
-				317173AF2997FF66008F14D9 /* Release */,
+				31E6FA42298A984C00283910 /* Debug */,
+				31E6FA43298A984C00283910 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		317173B02997FF66008F14D9 /* Build configuration list for PBXNativeTarget "NanoChallenge007" */ = {
+		31E6FA44298A984C00283910 /* Build configuration list for PBXNativeTarget "NanoChallenge007" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				317173B12997FF66008F14D9 /* Debug */,
-				317173B22997FF66008F14D9 /* Release */,
+				31E6FA45298A984C00283910 /* Debug */,
+				31E6FA46298A984C00283910 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3171739A2997FF65008F14D9 /* Project object */;
+	rootObject = 31E6FA2E298A984B00283910 /* Project object */;
 }
