@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentBalloon<Content>: View where Content: View {
     private var content: () -> Content
     
-    init(_ content: @escaping () -> Content) {
+    init(@ViewBuilder _ content: @escaping () -> Content) {
         self.content = content
     }
     

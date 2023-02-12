@@ -75,7 +75,7 @@ private struct NavigationArrange2: View {
     var body: some View {
         HStack(spacing: 20) {
             CustomNavigationLink2(title: "Talent Book", imageURL: "https://api.genshin.dev/materials/talent-book/philosophies-of-freedom", rarity: 5) {
-                EmptyView()
+                TalentBookList()
             } imageAdjustment: { image in
                 image
                     .resizable()

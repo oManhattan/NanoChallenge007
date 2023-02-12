@@ -15,12 +15,17 @@ struct LocalSpecialtiesList: View {
     var body: some View {
         ScrollView {
             GridList(localSpecialties.sorted(by: {$0.key.name < $1.key.name}), numberOfColumns: 3) { element in
-                AsyncImageCard(title: element.key.name, imageURL: "https://api.genshin.dev/materials/local-specialties/\(element.key.id)", rarity: 1, alignment: .bottom) { image in
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
+                NavigationLink {
+                    LocalSpecialtiesDetails(reference: element.value, specialtie: element.key)
+                } label: {
+                    AsyncImageCard(title: element.key.name, imageURL: "https://api.genshin.dev/materials/local-specialties/\(element.key.id)", rarity: 1, alignment: .bottom) { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    }
+                    .frame(height: CGFloat.getBounds().higher * 0.18)
                 }
-                .frame(height: CGFloat.getBounds().higher * 0.18)
+
             }
             .padding(.horizontal)
         }
@@ -29,7 +34,7 @@ struct LocalSpecialtiesList: View {
             do {
                 let request = try HTTPRequest.builder().path("https://api.genshin.dev/materials/local-specialties/").build()
                 let (data, _) = try await request.send()
-                if let json = try JSONSerialization.jsonObject(with: data) as? [String:Any] {
+                if let json = data.jsonObject() {
                     for key in json.keys {
                         guard let values = json[key] as? Array<[String:Any]> else { continue }
                         for value in values {

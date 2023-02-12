@@ -38,6 +38,15 @@ extension Array {
     }
 }
 
+extension Data {
+    func jsonObject() -> [String:Any]? {
+        if let json = try? JSONSerialization.jsonObject(with: self) as? [String:Any] {
+            return json
+        }
+        return nil
+    }
+}
+
 extension CGFloat {
     
     static func getBounds() -> (higher: Self, lower: Self) {

@@ -110,7 +110,7 @@ struct DetailsProfileLayout<Content>: View where Content: View {
     private var profileImageURL: String
     private var content: () -> Content
     
-    init(backgroundImageURL: String, profileImageURL: String, content: @escaping () -> Content) {
+    init(backgroundImageURL: String, profileImageURL: String, @ViewBuilder content: @escaping () -> Content) {
         self.backgroundImageURL = backgroundImageURL
         self.profileImageURL = profileImageURL
         self.content = content

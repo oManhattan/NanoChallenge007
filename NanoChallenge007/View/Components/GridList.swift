@@ -11,11 +11,11 @@ struct GridList<Element, Content>: View where Content: View {
     
     private var array: Array<Element>
     private var numberOfColumns: Int
-    @ViewBuilder private var content: (_ element: Element) -> Content
+    private var content: (_ element: Element) -> Content
     private var horizontalSpacing: CGFloat?
     private var verticalSpacing: CGFloat?
     
-    init(_ array: Array<Element>, numberOfColumns: Int = 2, horizontalSpacing: CGFloat? = nil, verticalSpacing: CGFloat? = nil, content: @escaping (_ element: Element) -> Content) {
+    init(_ array: Array<Element>, numberOfColumns: Int = 2, horizontalSpacing: CGFloat? = nil, verticalSpacing: CGFloat? = nil, @ViewBuilder content: @escaping (_ element: Element) -> Content) {
         self.array = array
         self.numberOfColumns = numberOfColumns
         self.content = content
