@@ -16,14 +16,16 @@ import Foundation
 
 struct ArtifactModel: JSONModel {
     var name: String
+    var onePieceBonus: String?
+    var twoPieceBonus: String?
+    var fourPieceBonus: String?
     var rarity: Int
-    var boundsLevel1: String
-    var boundsLevel2: String
     
     enum CodingKeys: String, CodingKey {
-        case name
+        case name = "name"
+        case onePieceBonus = "1-piece_bonus"
+        case twoPieceBonus = "2-piece_bonus"
+        case fourPieceBonus = "4-piece_bonus"
         case rarity = "max_rarity"
-        case boundsLevel1 = "2_piece_bounds"
-        case boundsLevel2 = "4_pieceBounds"
     }
 }

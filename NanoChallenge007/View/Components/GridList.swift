@@ -41,14 +41,13 @@ struct GridList<Element, Content>: View where Content: View {
 
 struct GridList_Previews: PreviewProvider {
     static var previews: some View {
-        ScrollView {
-            GridList(Array<String>(repeating: "Manhattan", count: 23), numberOfColumns: 2) { element in
-                ImageCard(title: element, rarity: 5, alignment: .center) {
-                    Image("UnkownNation")
-                }
-                .frame(minHeight: CGFloat.getBounds().higher * 0.15)
+        GridList(Array(1...7), numberOfColumns: 3) { element in
+            ZStack(alignment: .center) {
+                RoundedRectangle(cornerRadius: 10)
+                    .foregroundColor(.orange)
+                Text("\(element)")
             }
-            .padding(.horizontal)
         }
+        .padding(.horizontal)
     }
 }

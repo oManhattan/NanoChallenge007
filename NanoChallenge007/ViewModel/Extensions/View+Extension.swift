@@ -56,3 +56,10 @@ extension CGFloat {
         return (self.maximum(hight, width), self.minimum(hight, width))
     }
 }
+
+extension String {
+    
+    func formatToURL() -> Self {
+        return self.lowercased().replacingOccurrences(of: "'", with: "-").replacingOccurrences(of: " ", with: "-")
+    }
+}

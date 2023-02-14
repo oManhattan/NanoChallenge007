@@ -26,7 +26,7 @@ public class HTTPRequestBuilder {
     public init() {
         self.path = ""
         self.method = .GET
-        self.timeoutInterval = 5
+        self.timeoutInterval = 10
     }
     
     public func path(_ path: String) -> HTTPRequestBuilder {
@@ -120,7 +120,7 @@ public class HTTPRequest {
         return HTTPRequestBuilder()
     }
     
-    public func send() async throws -> (Data, HTTPURLResponse) {
+    public func send() async throws -> (data: Data, response: HTTPURLResponse) {
         print("Request made to: \(self.request.url?.absoluteString ?? "")")
         
         let sendRequest = Task { () -> (Data, HTTPURLResponse) in

@@ -15,7 +15,7 @@ struct AsyncImageCard<SuccessImage, FailedImage>: View where SuccessImage: View,
     private var successImage: (_ image: Image) -> SuccessImage
     private var failedImage: () -> FailedImage
     
-    init(title: String, imageURL: String, rarity: Int = 1, alignment: ImageAlignment = .center, successImage: @escaping (_ image: Image) -> SuccessImage, failedImage: @escaping () -> FailedImage = {Image("UnkownNation")}) {
+    init(title: String, imageURL: String, rarity: Int = 1, alignment: ImageAlignment = .center, @ViewBuilder successImage: @escaping (_ image: Image) -> SuccessImage, @ViewBuilder failedImage: @escaping () -> FailedImage = {Image("UnkownNation")}) {
         self.title = title
         self.imageURL = imageURL
         self.rarity = rarity

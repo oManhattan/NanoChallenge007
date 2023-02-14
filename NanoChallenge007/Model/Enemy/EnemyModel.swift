@@ -79,16 +79,16 @@ import Foundation
 struct EnemyModel: JSONModel {
     var id: String
     var name: String
-    var description: String
+    var description: String?
     var region: String
     var type: String
     var family: String
-    var faction: String
-    var elements: [String]
-    var drops: [EnemyDropModel]
-    var artifacts: [EnemyArtifactDropModel]
-    var elementalDescription: [EnemyElementModel]
-    var moraGained: Int
+    var faction: String?
+    var elements: [String]?
+    var drops: [EnemyDropModel]?
+    var artifacts: [EnemyArtifactDropModel]?
+    var elementalDescription: [EnemyElementModel]?
+    var moraGained: Int?
     
     enum CodingKeys: String, CodingKey {
         case id, name, description, region, type, family, faction, elements, drops, artifacts

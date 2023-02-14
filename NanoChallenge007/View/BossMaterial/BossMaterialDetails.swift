@@ -29,10 +29,7 @@ struct BossMaterialDetails: View {
                         ContentText(bossMaterial.source)
                         CustomSeparator()
                         ContentText("Characters")
-                        GridList(bossMaterial.characters, numberOfColumns: 3, horizontalSpacing: 20) { character in
-                            ImageRoundedBackground(imageURL: "https://api.genshin.dev/characters/\(character.lowercased())/icon", rarity: 5)
-                                .frame(height: CGFloat.getBounds().higher * 0.1)
-                        }
+                        CharactersGridList(references: bossMaterial.characters)
                     }
                 }
                 Spacer()

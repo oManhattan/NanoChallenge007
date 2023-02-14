@@ -12,12 +12,13 @@ enum ImageAlignment {
 }
 
 struct ImageCard<Content>: View where Content: View {
+    
     private var title: String
     private var rarity: Int
     private var alignment: ImageAlignment
     private var image: () -> Content
     
-    init(title: String, rarity: Int = 1, alignment: ImageAlignment = .center, image: @escaping () -> Content) {
+    init(title: String, rarity: Int = 1, alignment: ImageAlignment = .center, @ViewBuilder image: @escaping () -> Content) {
         self.title = title
         self.rarity = rarity
         self.alignment = alignment
@@ -44,11 +45,11 @@ struct ImageCard<Content>: View where Content: View {
                         Text(self.title)
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .semibold, design: .rounded))
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.2)
-                            .padding(.horizontal, 3)
+                            .lineLimit(2)
+                            .minimumScaleFactor(0.5)
+                            .padding(5)
                     }
-                    .frame(maxHeight: 30)
+                    .frame(maxHeight: 35)
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 10))
         case .bottom:
@@ -69,11 +70,11 @@ struct ImageCard<Content>: View where Content: View {
                             Text(self.title)
                                 .foregroundColor(.white)
                                 .font(.system(size: 17, weight: .semibold, design: .rounded))
-                                .lineLimit(1)
-                                .minimumScaleFactor(0.2)
-                                .padding(.horizontal, 3)
+                                .lineLimit(2)
+                                .minimumScaleFactor(0.5)
+                                .padding(5)
                         }
-                        .frame(maxHeight: 30)
+                        .frame(maxHeight: 35)
                     }
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 10))

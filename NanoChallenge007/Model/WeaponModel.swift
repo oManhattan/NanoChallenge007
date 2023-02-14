@@ -20,13 +20,13 @@ import Foundation
 //}
 
 struct WeaponModel: JSONModel {
-    var name: String
+    var name: String?
     var type: String
     var rarity: Int
-    var baseAttack: Int
+    var baseAttack: Int?
     var subStat: String
     var passiveName: String
     var passiveDesc: String
     var location: String
-    var ascensionMaterial: String
+    var ascensionMaterial: String?
 }
