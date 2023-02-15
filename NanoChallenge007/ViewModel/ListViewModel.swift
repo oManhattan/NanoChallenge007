@@ -110,7 +110,7 @@ class ListViewModel: ObservableObject {
         let (data, _) = try await request.send()
         if let json = try JSONSerialization.jsonObject(with: data) as? [String:Any] {
             for i in json {
-                guard let value = i.value as? [String:Any], let model = WeaponAscensionModel.decode(value) else { print("Deu ruim"); continue }
+                guard let value = i.value as? [String:Any], let model = WeaponAscensionModel.decode(value) else { continue }
                 self.weaponAscensions[model] = i.key
             }
         }

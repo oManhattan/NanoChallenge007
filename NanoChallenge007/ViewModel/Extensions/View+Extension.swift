@@ -60,6 +60,18 @@ extension CGFloat {
 extension String {
     
     func formatToURL() -> Self {
-        return self.lowercased().replacingOccurrences(of: "'", with: "-").replacingOccurrences(of: " ", with: "-")
+        return self
+            .lowercased()
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+            .replacingOccurrences(of: "'", with: "-")
+            .replacingOccurrences(of: " ", with: "-")
+    }
+}
+
+extension Date {
+    func dayOfWeek() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EE"
+        return dateFormatter.string(from: self)
     }
 }

@@ -62,6 +62,8 @@
 		31870F37299B3C1900B8F408 /* EnemyDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31870F36299B3C1900B8F408 /* EnemyDetails.swift */; };
 		31870F3A299BD72C00B8F408 /* CommonAscensionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31870F39299BD72C00B8F408 /* CommonAscensionDetails.swift */; };
 		31870F3D299C1D0E00B8F408 /* ConsumableDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31870F3C299C1D0E00B8F408 /* ConsumableDetails.swift */; };
+		31870F40299C2BDB00B8F408 /* DomainsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31870F3F299C2BDB00B8F408 /* DomainsList.swift */; };
+		31870F42299CE8C000B8F408 /* DomainDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31870F41299CE8C000B8F408 /* DomainDetails.swift */; };
 		31BBFF0829985F1500C39736 /* TalentBookDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BBFF0729985F1500C39736 /* TalentBookDetails.swift */; };
 		31E6FA3A298A984B00283910 /* NanoChallenge007App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6FA39298A984B00283910 /* NanoChallenge007App.swift */; };
 		31E6FA3E298A984C00283910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31E6FA3D298A984C00283910 /* Assets.xcassets */; };
@@ -134,6 +136,8 @@
 		31870F36299B3C1900B8F408 /* EnemyDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyDetails.swift; sourceTree = "<group>"; };
 		31870F39299BD72C00B8F408 /* CommonAscensionDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAscensionDetails.swift; sourceTree = "<group>"; };
 		31870F3C299C1D0E00B8F408 /* ConsumableDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumableDetails.swift; sourceTree = "<group>"; };
+		31870F3F299C2BDB00B8F408 /* DomainsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainsList.swift; sourceTree = "<group>"; };
+		31870F41299CE8C000B8F408 /* DomainDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainDetails.swift; sourceTree = "<group>"; };
 		31BBFF0729985F1500C39736 /* TalentBookDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentBookDetails.swift; sourceTree = "<group>"; };
 		31E6FA36298A984B00283910 /* NanoChallenge007.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge007.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31E6FA39298A984B00283910 /* NanoChallenge007App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoChallenge007App.swift; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 				3171732F29943C19008F14D9 /* CommonAscensionModel.swift */,
 				3171732A2993EF95008F14D9 /* BossMaterialModel.swift */,
 				3171733129943CCA008F14D9 /* LocalSpecialtiesModel.swift */,
+				31870F3C299C1D0E00B8F408 /* ConsumableDetails.swift */,
 				3171733329943DD2008F14D9 /* TalentBookModel.swift */,
 				3171733529943E81008F14D9 /* TalentBossModel.swift */,
 				3171733729943F87008F14D9 /* WeaponAscensionModel.swift */,
@@ -301,9 +306,17 @@
 		31870F3B299C1CFD00B8F408 /* Consumables */ = {
 			isa = PBXGroup;
 			children = (
-				31870F3C299C1D0E00B8F408 /* ConsumableDetails.swift */,
 			);
 			path = Consumables;
+			sourceTree = "<group>";
+		};
+		31870F3E299C2BC000B8F408 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				31870F3F299C2BDB00B8F408 /* DomainsList.swift */,
+				31870F41299CE8C000B8F408 /* DomainDetails.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		31BBFF04299852CB00C39736 /* TalentBook */ = {
@@ -366,6 +379,7 @@
 				31870F35299B3C0500B8F408 /* Enemy */,
 				31870F38299BD6DC00B8F408 /* CommonAscension */,
 				31870F3B299C1CFD00B8F408 /* Consumables */,
+				31870F3E299C2BC000B8F408 /* Domain */,
 				31E6FA4A298A988200283910 /* MainScreen.swift */,
 			);
 			path = View;
@@ -527,6 +541,7 @@
 				3171737029970B5C008F14D9 /* CharacterConstellationView.swift in Sources */,
 				3171731D29928697008F14D9 /* SkillUpgradeModel.swift in Sources */,
 				31717343299458CF008F14D9 /* EnemyDropModel.swift in Sources */,
+				31870F40299C2BDB00B8F408 /* DomainsList.swift in Sources */,
 				317173102991C0CB008F14D9 /* RarityBackground.swift in Sources */,
 				3171735129945EFC008F14D9 /* DomainModel.swift in Sources */,
 				31E6FA61298AD9EA00283910 /* JSONModel.swift in Sources */,
@@ -551,6 +566,7 @@
 				3171730E2991BA88008F14D9 /* CustomNavigationLink2.swift in Sources */,
 				317173292993EF1C008F14D9 /* MaterialModel.swift in Sources */,
 				31E6FA50298A9AD800283910 /* HTTPRequest.swift in Sources */,
+				31870F42299CE8C000B8F408 /* DomainDetails.swift in Sources */,
 				31E6FA6E298B012500283910 /* CharacterDetailsView.swift in Sources */,
 				31717353299463C8008F14D9 /* DomainRequirementsModel.swift in Sources */,
 				31870F3D299C1D0E00B8F408 /* ConsumableDetails.swift in Sources */,

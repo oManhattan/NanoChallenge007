@@ -280,7 +280,7 @@ private struct NavigationArrange5: View {
         
         HStack(spacing: 20) {
             NavigationLink {
-                EmptyView()
+                DomainsList()
             } label: {
                 ImageCard(title: "Domains", rarity: 1, alignment: .bottom) {
                     Image("IconDomain")

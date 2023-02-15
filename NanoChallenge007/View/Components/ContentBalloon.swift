@@ -18,7 +18,7 @@ struct ContentBalloon<Content>: View where Content: View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
                 .foregroundColor(Color("ContentBackground"))
-            VStack() {
+            VStack(spacing: 10) {
                 content()
                     .padding()
             }
