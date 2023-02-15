@@ -117,57 +117,6 @@ class DomainViewModel: ObservableObject {
         return []
     }
     
-    /**
-     // hidden place
-     https://api.genshin.dev/materials/weapon-ascension/divine-body-from-guyun
-     https://api.genshin.dev/materials/weapon-ascension/mist-veiled-primo-elixir
-     https://api.genshin.dev/materials/weapon-ascension/chunk-of-aerosiderite
-     
-     // cecilia garden
-     https://api.genshin.dev/materials/weapon-ascension/scattered-piece-of-decarabian-s-dream
-     https://api.genshin.dev/materials/weapon-ascension/dream-of-the-dandelion-gladiator
-     https://api.genshin.dev/materials/weapon-ascension/boreal-wolf-s-nostalgia
-     
-     // domain of guyun
-     https://api.genshin.dev/artifacts/lucky-dog/flower-of-life
-     https://api.genshin.dev/artifacts/brave-heart/flower-of-life
-     https://api.genshin.dev/artifacts/archaic-petra/flower-of-life
-     https://api.genshin.dev/artifacts/retracing-bolide/flower-of-life
-     
-     // Midsummer Courtyard
-     https://api.genshin.dev/artifacts/resolution-of-sojourner/flower-of-life
-     https://api.genshin.dev/artifacts/adventurer/flower-of-life
-     https://api.genshin.dev/artifacts/thundering-fury/flower-of-life
-     https://api.genshin.dev/artifacts/thundersoother/flower-of-life
-     */
-    
-    func getRewardItems(domain: DomainModel) async throws -> [String] {
-        guard
-            let (rewards, category) = getRewardsOfTheDay(domain: domain),
-            let details = rewards.details.sorted(by: {$0.level > $1.level}).first,
-            let items = details.items
-        else { fatalError() }
-        
-        if category == "artifacts" {
-            return items.map({"https://api.genshin.dev/\(category)/\($0.name.formatToURL())/flower-of-life"})
-        } else {
-            let request = try HTTPRequest.builder().path("https://api.genshin.dev/materials/weapon-ascension").build()
-            let (data, _) = try await request.send()
-            if let json = try JSONSerialization.jsonObject(with: data) as? [String:Any] {
-                for i in json {
-                    guard
-                        let value = i.value as? [String:Any],
-                        let model = WeaponAscensionModel.decode(value),
-                        let firstReward = items.first,
-                        model.items.contains(where: {$0.name.formatToURL() == firstReward.name.formatToURL()})
-                    else { continue }
-                    return items.map({"https://api.genshin.dev/\(category)/\($0.name.formatToURL())"})
-                }
-            }
-        }
-        return []
-    }
-    
     private func getRewardsOfTheDay(domain: DomainModel) -> (rewards: DomainReward, category: String)? {
         if let rewards = domain.rewards.filter({$0.day == "always"}).first {
             return (rewards, "artifacts")

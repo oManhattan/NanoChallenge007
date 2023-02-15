@@ -43,6 +43,7 @@ struct DomainDetails: View {
                 DomainBasicDetails(domain: domain)
                 DomainRecommendedElements(elements: domain.recommendedElements)
                 DomainRequirements(requirements: domain.requirements)
+                DomainRewardsDetials(domainViewModel: domainvm, domain: domain)
             }
             .padding(.horizontal)
         }
@@ -118,3 +119,37 @@ struct DomainRequirements: View {
     }
 }
 
+struct DomainRewardsDetials: View {
+    @ObservedObject private var domainvm: DomainViewModel
+    private var domain: DomainModel
+    private var category: String {
+        return (domain.name.formatToURL() == "cecilia-garden" || domain.name.formatToURL() == "hidden-palace-of-lianshan-formula") ? "materials/weapon-ascension" : "artifacts"
+    }
+    
+    init(domainViewModel: DomainViewModel, domain: DomainModel) {
+        self.domainvm = domainViewModel
+        self.domain = domain
+    }
+    
+    var body: some View {
+        ForEach(domain.rewards, id: \.self) { reward in
+            if let detail = reward.details.sorted(by: {$0.level > $1.level}).first, let items = detail.items {
+                ContentBalloon {
+                    VStack(spacing: 10) {
+                        CustomTitleView(reward.day.capitalized)
+                        ContentText("Drops")
+                        CustomSeparator()
+                        GridList(items, numberOfColumns: 4) { element in
+                            CustomAsyncImage(imageURL: "https://api.genshin.dev/\(category)/\(element.name.formatToURL())/\((element.name == "artifacts") ? "flower-of-life" : "")") { image in
+                                image.resizable().aspectRatio(contentMode: .fit)
+                            } failedImage: {
+                                Image("UnkownNation").resizable().aspectRatio(contentMode: .fit)
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
