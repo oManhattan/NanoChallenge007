@@ -140,12 +140,11 @@ struct DomainRewardsDetials: View {
                         ContentText("Drops")
                         CustomSeparator()
                         GridList(items, numberOfColumns: 4) { element in
-                            CustomAsyncImage(imageURL: "https://api.genshin.dev/\(category)/\(element.name.formatToURL())/\((element.name == "artifacts") ? "flower-of-life" : "")") { image in
+                            CustomAsyncImage(imageURL: "https://api.genshin.dev/\(category)/\(element.name.formatToURL())/\((category == "artifacts") ? "flower-of-life" : "")") { image in
                                 image.resizable().aspectRatio(contentMode: .fit)
                             } failedImage: {
                                 Image("UnkownNation").resizable().aspectRatio(contentMode: .fit)
                             }
-
                         }
                     }
                 }
